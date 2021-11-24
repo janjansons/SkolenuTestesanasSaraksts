@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/layout/list_row.xml" value="0.20871327254305977" />
+        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/drawable/add_item.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/layout/activity_main.xml" value="0.3291326908821349" />
+        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/layout/list_row.xml" value="0.5" />
+        <entry key="..\:/Users/janis.jansons/Downloads/Skolenu Testesanas Saraksts/SkolenuTestesanasSaraksts/app/src/main/res/layout/saraksta_skats.xml" value="0.5" />
       </map>
     </option>
   </component>
