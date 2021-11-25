@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList = dbHandler.readStudents();
         listViewAdapter = new ListViewAdapter(this,arrayList);
         listView.setAdapter(listViewAdapter);
-        listViewAdapter.notifyDataSetChanged();
+
     }
 
 
@@ -63,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
                     dbHandler.addNewStudent(text);
                     input.setText("");
                     Toast.makeText(MainActivity.this, "Pievienots: " + text, Toast.LENGTH_LONG).show();
+                    listViewAdapter.notifyDataSetChanged();
                 }
+
             }
         });
 

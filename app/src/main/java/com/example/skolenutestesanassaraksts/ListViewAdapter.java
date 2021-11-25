@@ -58,23 +58,27 @@ public class ListViewAdapter extends BaseAdapter {
     @SuppressLint("SetTextI18n")
     @NonNull
     @Override
-    public View getView(int position,View convertView,ViewGroup parent) {
+    public View getView(int position,View convertView,ViewGroup container) {
 
+
+        if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
-            convertView = layoutInflater.inflate(R.layout.list_row, null);
+            convertView = layoutInflater.inflate(R.layout.list_row, container, false);
+        }
+
 
             TextView number = convertView.findViewById(R.id.number);
-            //number.setText(position + 1 + ".");
+            number.setText(String.valueOf(StudentModal.getId()));
 
             TextView name = convertView.findViewById(R.id.name);
-            number.setText(StudentModal.getStudentName());
+            name.setText(StudentModal.getStudentName());
 
-            TextView mDisplayDate = (TextView)convertView.findViewById(R.id.date);
+            TextView mDisplayDate = convertView.findViewById(R.id.date);
             ImageView remove = convertView.findViewById(R.id.remove);
 
             StudentModal studentModal = arrayList.get(position);
 
-            number.setText(String.valueOf(StudentModal.getId()) +1 + ".");
+            //number.setText((CharSequence) arrayList.get(position));
 
             //name.setText(StudentModal.getStudentName());
 
